@@ -1,0 +1,62 @@
+import 'package:flutter/cupertino.dart';
+import 'package:get/get.dart';
+
+import '../../common/controllers/base_controller.dart';
+import '../bindings/dashboard_bindings.dart';
+import '../utils/dashboard_assets.dart';
+
+class DashboardController extends BaseController {
+  RxInt currentIndex = 0.obs;
+
+
+  changeBottomNavigation(int index) async {
+    currentIndex.value = index;
+    await refreshPage(index);
+  }
+
+  Future<void> refreshPage(int index) async {
+    switch (index) {
+      case 0:
+        {
+          DashboardBindings().dependencies();
+          break;
+        }
+      case 1:
+        {
+          DashboardBindings().dependencies();
+          break;
+        }
+      case 2:
+        {
+          DashboardBindings().dependencies();
+          break;
+        }
+      case 3:
+        {
+          DashboardBindings().dependencies();
+          break;
+        }
+      case 4:
+        {
+          DashboardBindings().dependencies();
+          break;
+        }
+    }
+  }
+
+  RxInt currentSliderIndex = 0.obs;
+  List<Image> carouselSliderItems = [
+    Image.asset(
+      DashboardAssets.corousalPlaceholder,
+    ),
+    Image.asset(
+      DashboardAssets.corousalPlaceholder,
+    ),
+    Image.asset(
+      DashboardAssets.corousalPlaceholder,
+    ),
+    Image.asset(
+      DashboardAssets.corousalPlaceholder,
+    ),
+  ];
+}

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "934397723806",
+    "project_id": "mgm-app-86c6a",
+    "storage_bucket": "mgm-app-86c6a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934397723806:android:3770e54dc82251bdae278f",
+        "android_client_info": {
+          "package_name": "com.example.mgm_client_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "934397723806-on7h29ls3rrgt67lgblvbvri1fufd1q2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2UZOpLC25Y7djONyZpyGbgeSnQBabA-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "934397723806-on7h29ls3rrgt67lgblvbvri1fufd1q2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
